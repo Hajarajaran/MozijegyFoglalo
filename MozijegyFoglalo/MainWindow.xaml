@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MozijegyFoglalo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="750" Width="420">
+        Title="Mozijegy foglalás" Height="750" Width="420">
     <Grid>
         <StackPanel Margin="30,30,30,0">
             <TextBlock Text="🎬 MOZIJEGY FOGLALÁS"
@@ -63,23 +63,22 @@
                          GroupName="jegy"
                          Margin="0,0,0,5"
                          x:Name="normalJegyOpcio"/>
-            <RadioButton Content="Diákjegy - 1900 Ft Ft"
+            <RadioButton Content="Diákjegy - 1900 Ft"
              GroupName="jegy" Margin="0,0,0,5" x:Name="diakJegyOpcio"/>
             <RadioButton Content="VIP jegy - 4000 Ft"
              GroupName="jegy" Margin="0,0,0,5" x:Name="vipJegyOpcio"/>
 
             <TextBlock Text="Jegyek száma"
-          FontSize="12"
-          FontWeight="Bold"
-          Margin="0,15,0,0"/>
+                      FontSize="12"
+                      FontWeight="Bold"
+                      Margin="0,15,0,0"/>
             <TextBox x:Name="jegyekSzamaTxt"
-        BorderThickness="1"
-         BorderBrush="Gray"
-         Height="40"
-         FontSize="15"
-         Margin="0,5,0,0"
-         Padding="10,8,10,10"
-         />
+                    BorderThickness="1"
+                     BorderBrush="Gray"
+                     Height="40"
+                     FontSize="15"
+                     Margin="0,5,0,0"
+                     Padding="10,8,10,10"/>
 
             <TextBlock Text="Extrák"
                 FontSize="12"

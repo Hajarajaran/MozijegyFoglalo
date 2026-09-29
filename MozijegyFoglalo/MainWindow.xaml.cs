@@ -41,7 +41,6 @@ namespace MozijegyFoglalo
                 return;
             } 
             
-            
             try
             {
                 kor = Convert.ToInt32(korTxt.Text);
@@ -125,7 +124,6 @@ namespace MozijegyFoglalo
             }
 
             string foglalas = $"Sikeres foglalás!\n\nNév: {nev}\nÉletkor: {kor}\nFilm: {film}\nJegytípus: {jegytipus}\nJegyek száma: {jegyekSzama}\nExtrák: {string.Join(", ", extrak)}\n\nFizetendő: {ar} Ft";
-
             MessageBox.Show(foglalas, "Foglalás", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
