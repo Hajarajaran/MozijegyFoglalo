@@ -1,0 +1,102 @@
+﻿<Window x:Class="MozijegyFoglalo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MozijegyFoglalo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="420">
+    <Grid>
+        <StackPanel Margin="30,30,30,0">
+            <TextBlock Text="🎬 MOZIJEGY FOGLALÁS"
+                       TextAlignment="Center" 
+                      FontSize="29"
+                       FontWeight="Bold"
+                       Margin="0,0,0,0"/>
+            <TextBlock Text="Foglalj jegyet kedvenc filmedre!"
+                       TextAlignment="Center" 
+                      FontSize="15"
+                      Foreground="Gray"
+                      Margin="0,5,0,0"/>
+            <TextBlock Text="Név"
+                      FontSize="12"
+                      FontWeight="Bold"
+                      Margin="0,30,0,0"/>
+            <TextBox x:Name="nevTxt"
+                    BorderThickness="1"
+                     BorderBrush="Gray"
+                     Height="40"
+                     FontSize="15"
+                     Margin="0,5,0,0"
+                     Padding="10,8,10,10"
+                     />
+            <TextBlock Text="Életkor"
+                      FontSize="12"
+                      FontWeight="Bold"
+                      Margin="0,15,0,0"/>
+            <TextBox x:Name="korTxt"
+                    BorderThickness="1"
+                     BorderBrush="Gray"
+                     Height="40"
+                     FontSize="15"
+                     Margin="0,5,0,0"
+                     Padding="10,8,10,10"
+                     />
+            <TextBlock Text="Film"
+                      FontSize="12"
+                      FontWeight="Bold"
+                      Margin="0,15,0,0"/>
+            <ComboBox x:Name="filmek"
+                      Margin="0,5,0,0"
+                      Height="40">
+                <ComboBoxItem Content="Minecraft Movie"/>
+                <ComboBoxItem Content="Star Wars"/>
+                <ComboBoxItem Content="Avatar"/>
+                <ComboBoxItem Content="Jurassic World"/>
+            </ComboBox>
+
+            <TextBlock Text="Jegytípus"
+                      FontSize="12"
+                      FontWeight="Bold"
+                      Margin="0,15,0,5"/>
+            <RadioButton Content="Normál jegy - 2500 Ft"
+                         GroupName="jegy"
+                         Margin="0,0,0,5"
+                         x:Name="normalJegyOpcio"/>
+            <RadioButton Content="Diákjegy - 1900 Ft Ft"
+             GroupName="jegy" Margin="0,0,0,5" x:Name="diakJegyOpcio"/>
+            <RadioButton Content="VIP jegy - 4000 Ft"
+             GroupName="jegy" Margin="0,0,0,5" x:Name="vipJegyOpcio"/>
+
+            <TextBlock Text="Jegyek száma"
+          FontSize="12"
+          FontWeight="Bold"
+          Margin="0,15,0,0"/>
+            <TextBox x:Name="jegyekSzamaTxt"
+        BorderThickness="1"
+         BorderBrush="Gray"
+         Height="40"
+         FontSize="15"
+         Margin="0,5,0,0"
+         Padding="10,8,10,10"
+         />
+
+            <TextBlock Text="Extrák"
+                FontSize="12"
+                FontWeight="Bold"
+                Margin="0,15,0,0"/>
+
+            <CheckBox x:Name="popcornOpcio" Content="🍿 Popcorn (+1200 Ft)" Margin="0,5,0,0"/>
+            <CheckBox x:Name="uditoOpcio" Content="🥤 Üdítő (+800 Ft)" Margin="0,5,0,0"/>
+            <CheckBox x:Name="szemuvegOpcio" Content="🕶️ 3D szemüveg (+500 Ft)" Margin="0,5,0,0"/>
+            <CheckBox x:Name="feltetelekOpcio" Content="Elfogadom a vásárlási feltételeket" Margin="0,15,0,0"/>
+            <Button Content="Foglalás"
+                    Foreground="White"
+                    Background="#FF0062FF"
+                    FontWeight="Bold"
+                    FontSize="14"
+                    Height="40"
+                    Margin="0,15,0,0" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
